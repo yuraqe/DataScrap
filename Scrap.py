@@ -8,7 +8,6 @@ from data_base import get_values, create_connection, create_database, execute_qu
 from log import proxy_verification1, proxy_verification2, BD_host_name, Bd_user_name, BD_password
 import re
 import random
-import logging
 
 
 class DataScraping:
@@ -92,6 +91,6 @@ class DataScraping:
         asyncio.run(self.main())
 
 
-url = "https://www.zoopla.co.uk/to-rent/property/london/?price_frequency=per_month&q=London&search_source=home&"
+url = "website"
 parsing = DataScraping()
 parsing(url)
